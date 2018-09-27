@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+			<section>
+				<h2 style="letter-spacing: 8px;"> TypeScript </h2>
+				<ul>
+					<li style="height: 70px;"> What is TypeScript? </li>
+					<li style="height: 70px;"> Features of TypeScript </li>
+					<li style="height: 70px;"> TypeScript and ECMAScript </li>
+					<li style="height: 70px;"> Why use TypeScript? </li>
+				</ul>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> What is TypeScript? </p>
+				<p style = "font-size: 32px;"> TypeScript is JavaScript for application-scale development </p>
+				<img  height="300" width="400" data-src="img/typescript_figure.jpg"/></br>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> Features of TypeScript </p>
+				<ul>
+					<li style="height: 60px; font-size: 32px;"> JavaScript is TypeScript </li>
+					<li style="height: 60px; font-size: 32px;"> TypeScript supports JS libraries </li>
+					<li style="height: 60px; font-size: 32px;"> TypeScript is portable </li>
+				</ul>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> TypeScript and ECMAScript </p>
+				</br> 
+				<img height="150" width="400" data-src="img/typescript_and_ecmascript.jpg"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> Why use TypeScript? </p>
+				<ul>
+					<li style="height: 60px; font-size: 32px;"> Compilation </li>
+					<li style="height: 60px; font-size: 32px;"> Strong Static Typing </li>
+					<li style="height: 60px; font-size: 32px;"> Object Oriented Programming</li>
+				</ul>
+			</section>
+			<section>
+				<h2 style="letter-spacing: 8px;"> Transpilers </h2>
+				<ul>
+					<li style="height: 60px; font-size: 42px;"> Source-To-Source Compilers </li>
+					<li style="height: 60px; font-size: 42px;"> Benefit of using Transpilers </li>
+					<li style="height: 60px; font-size: 42px;"> Babel </li>
+				</ul>
+			</section>
+			<section>
+				<img data-src="img/nest_logo.svg"/>
+			</section>
+			<section>
+				<ul>
+					<li style="font-size: 32px;"> Nest is a framework for building efficient, scalable Node.js server-side applications </li>
+					<li style="font-size: 32px;"> It uses progressive JavaScript, is built with TypeScript  </li>
+					<li style="font-size: 32px;"> Combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming) </li>
+					<li style="font-size: 32px;"> Under the hood, Nest makes use of Express, but also provides compatibility with a wide range of other libraries </li>
+				</ul>
+			</section>
+			<section>
+				<h2 style="letter-spacing: 8px;"> Controller </h2>
+				<p> Controllers are responsible for handling incoming requests and returning responses to the client. </p>
+				<img data-src="img/Controllers_1.png"/>
+			</section>
+			<section>
+				<h2 style="letter-spacing: 8px;"> Providers </h2>
+				<p> Basically, almost everything may be considered as a provider – service, repository, factory, helper... </p>
+				<img height="400" data-src="img/Components_1.png"/>
+			</section>
+			<section>
+				<h2 style="letter-spacing: 8px;"> Modules </h2>
+				<p> Modules provides metadata that Nest makes use of to organize the application structure. </p>
+				<img height="400" data-src="img/Modules_1.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> Setting up Nest Project </p>
+				<ul>
+					<li style="font-size: 32px; list-style: none;"> Install Node.js(>=8.9.0)  </li>
+					<li style="font-size: 32px; list-style: none;"> Install Nest CLI with command "npm i -g @nestjs/cli"  </li>
+					<li style="font-size: 32px; list-style: none;"> Create new project using command "nest new project" </li>
+				</ul>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> Nest-generated structure </p>
+				<ul>
+					<li style="font-size: 32px; list-style: none;"> app.controller.ts </li>
+					<li style="font-size: 32px; list-style: none;"> app.controller.spec.ts </li>
+					<li style="font-size: 32px; list-style: none;"> app.service.ts </li>
+					<li style="font-size: 32px; list-style: none;"> app.module.ts </li>
+					<li style="font-size: 32px; list-style: none;"> main.ts </li>
+				</ul>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> app.controller.ts </p>
+				<img data-src="img/controller.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> app.controller.spec.ts </p>
+				<img data-src="img/spec.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> app.service.ts </p>
+				<img data-src="img/service.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> app.module.ts </p>
+				<img data-src="img/module.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> main.ts </p>
+				<img data-src="img/main.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> Database model for MongoDB </p>
+				<img data-src="img/model.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> Authentication </p>
+				<img data-src="img/auth.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> Authentication </p>
+				<img data-src="img/strategy.png"/>
+			</section>
+			<section>
+				<p style = "font-size: 42px;"> Authentication </p>
+				<img data-src="img/auth.module.png"/>
+			</section>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
